@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Home from "./pages/home";
-import Orders from "./pages/orders";
+import Todos from "./pages/todos";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -15,7 +15,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/orders" element={<Orders />} />
+        <Route path="/todos" element={<Todos />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

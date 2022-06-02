@@ -16,8 +16,8 @@ const fetcher = () =>
     res.json()
   );
 
-function App() {
-  const { data, error } = useSWR<DummyData>("dummy-data", fetcher);
+function Todos() {
+  const { data, error } = useSWR<DummyData>("todos", fetcher);
 
   if (error) return <div>Failed to load</div>;
   if (!data) return <div>Loading...</div>;
@@ -25,12 +25,12 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <title>Orders - {data.title}</title>
-        <meta name="description" content="Some orders description ..." />
+        <title>Todos - {data.title}</title>
+        <meta name="description" content="Some todos description ..." />
       </Helmet>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Orders page</p>
+        <p>Todo: {data.title}</p>
         <Link className="App-link" to="/">
           Go back
         </Link>
@@ -39,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default Todos;

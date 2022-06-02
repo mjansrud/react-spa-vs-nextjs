@@ -16,8 +16,8 @@ function App() {
         <p>
           Welcome to <code>Create React App</code>
         </p>
-        <Link className="App-link" to="/orders">
-          Go to orders
+        <Link className="App-link" to="/todos">
+          Go to todos
         </Link>
       </header>
     </div>

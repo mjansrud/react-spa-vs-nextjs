@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          <Link href="/orders">Go to SSR page</Link>
+          <Link href="/todos">Go to SSR page</Link>
           <br />
           <Link href="/static">Go to static page</Link>
         </p>

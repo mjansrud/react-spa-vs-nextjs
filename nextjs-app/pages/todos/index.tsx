@@ -24,17 +24,17 @@ interface Props {
   data: DummyData;
 }
 
-const Home: NextPage<Props> = ({ data }) => {
+const Todos: NextPage<Props> = ({ data }) => {
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App - {data.title}</title>
-        <meta name="description" content="Some orders description ..." />
+        <meta name="description" content="Some todos description ..." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Server side rendered orders page 🤘!</h1>
+        <h1 className={styles.title}>Server side rendered todos page 🤘!</h1>
         <p className={styles.description}>
           <Link href="/">Go back</Link>
         </p>
@@ -43,4 +43,4 @@ const Home: NextPage<Props> = ({ data }) => {
   );
 };
 
-export default Home;
+export default Todos;
