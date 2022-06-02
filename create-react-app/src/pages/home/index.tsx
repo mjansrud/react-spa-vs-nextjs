@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Helmet>
         <title>Home</title>
-        <meta name="description" content="Some home description ..."  />
+        <meta name="description" content="Some home description ..." />
       </Helmet>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
